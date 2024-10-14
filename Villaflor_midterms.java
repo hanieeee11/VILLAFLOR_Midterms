@@ -1,3 +1,4 @@
+// Base class
 class Person {
     String name;
     int age;
@@ -12,8 +13,9 @@ class Person {
         System.out.println("Age: " + age + "years old");
     }
 }
-
+// Subclass of class Person
 class Student extends Person {
+    // Initializing variables
     String studentID;
     String course;
     int units;
@@ -40,13 +42,13 @@ class Student extends Person {
         System.out.println("Total Fee: " + calculateFees());
     }
 }
-
+// Also a subclass of Person
 class Instructor extends Person {
     String employeeID;
     String department;
     double salary;
 
-    // Initializing variables
+    
     Instructor(String name, int age, String employeeID, String department, double salary) {
         super(name, age);
         this.employeeID = employeeID;
